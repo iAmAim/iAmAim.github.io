@@ -7,10 +7,10 @@ $(document).ready(function() {
    console.log( "currentElem:", currentElem.text() );
     if(clickedElem.text() === currentElem.text()){
      console.log("Clicked elem is the current, removing active class")
-    //  currentElem.addClass( "active" );
-    currentElem.removeClass( "active" );
+    currentElem.addClass( "active" );
     console.log(currentElem);
     }else{
+     console.log("removing class active")
       currentElem.removeClass( "active" );
     }
    });
