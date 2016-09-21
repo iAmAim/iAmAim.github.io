@@ -21,7 +21,7 @@ li a {
 .menuItem:hover:not(.active) {
     background-color: #111;
 }
-.menuItem.active:hover {
+a.menuItem.active:hover {
     background-color: #0000;
 }
 .menuItem.active {
