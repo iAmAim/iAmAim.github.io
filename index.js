@@ -1,5 +1,5 @@
 $(document).ready(function() 
- {
+ { console.log("hadouken!");
     $('li').click(function(e) 
     { 
      var clickedElem= $(this).text(); 
