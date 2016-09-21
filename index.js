@@ -1,7 +1,7 @@
 $(document).ready(function() { 
  $('li').click(function(e) { 
    var clickedElem= $(this);
-    console.log( "clickedElem: "clickedElem.text());
+    console.log( "clickedElem: ",clickedElem.text());
    $( "li" ).each(function( index ) {
    var currentElem = $( this ); 
    console.log( "currentElem:", currentElem.text() );
