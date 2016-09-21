@@ -7,7 +7,9 @@ $(document).ready(function() {
    console.log( index + ": " + currentElem );
     if(clickedElem === currentElem){
      $(this).addClass( "active" );
-    } 
+    }else{
+      $(this).removeClass( "active" );
+    }
    });
  }); 
 });
