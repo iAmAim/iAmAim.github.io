@@ -18,12 +18,12 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover:not(.active) {
+.menuItem:hover:not(.active) {
     background-color: #111;
 }
-li a:hover(.active) {
+.menuItem.active:hover {
     background-color: #0000;
 }
-.active {
+.menuItem.active {
     background-color: #4CAF50;
 }
