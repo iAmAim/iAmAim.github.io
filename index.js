@@ -1,8 +1,8 @@
 $(document).ready(function() { 
- $('li').click(function(e) { 
+ $('.menuItem').click(function(e) { 
    var clickedElem= $(this);
     console.log( "clickedElem: ",clickedElem.text());
-   $( "li" ).each(function( index ) {
+   $( ".menuItem" ).each(function( index ) {
    var currentElem = $( this ); 
    console.log( "currentElem:", currentElem.text() );
     if(clickedElem.text() === currentElem.text()){
