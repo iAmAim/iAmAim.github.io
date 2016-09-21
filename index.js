@@ -1,14 +1,14 @@
 $(document).ready(function() { 
  $('li').click(function(e) { 
-   var clickedElem= $(this).text();
+   var clickedElem= $(this);
     console.log( clickedElem);
    $( "li" ).each(function( index ) {
-   var currentElem = $( this ).text(); 
+   var currentElem = $( this ); 
    console.log( index + ": " + currentElem );
-    if(clickedElem === currentElem){
-     $(this).addClass( "active" );
+    if(clickedElem.text() === currentElem.text()){
+      currentElem.addClass( "active" );
     }else{
-      $(this).removeClass( "active" );
+      currentElem.removeClass( "active" );
     }
    });
  }); 
