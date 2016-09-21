@@ -6,7 +6,8 @@ $(document).ready(function() {
    var currentElem = $( this ); 
    console.log( index + ": " + currentElem );
     if(clickedElem.text() === currentElem.text()){
-      currentElem.addClass( "active" );
+    //  currentElem.addClass( "active" );
+    currentElem.removeClass( "active" );
     }else{
       currentElem.removeClass( "active" );
     }
