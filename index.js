@@ -6,7 +6,7 @@ $(document).ready(function()
       $( "li" ).each(function( index ) {
        
        var currentElem = $( this ).text();
-       console.log( index + ": " + $( this ).text() );
+       console.log( index + ": " + currentElem );
       
        if(clickedElem === currentElem){
         $(this).addClass( "active" );
