@@ -24,6 +24,6 @@ li a {
 .menuItem.active {
     background-color: #4CAF50;
 }
-.active:hover {
+.menuItem.active:hover {
     background-color: #367c39;
 }
