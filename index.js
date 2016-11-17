@@ -4,7 +4,7 @@ $(document).ready(function() {
  setDefaultLocation();
  
  //add click event handler for the menu
- $('.menuItem').bind("click",displayMenuContent());
+ $('.menuItem').bind("click",displayMenuContent);
  
 });
 
