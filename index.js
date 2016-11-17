@@ -1,13 +1,16 @@
 $(document).ready(function() { 
  
  //set default to home
- if(window.location.hash.length <1){
-  test();
-  window.location.hash= "home";
- }
+ setDefaultLocation();
+ 
  
  //add click event handler for the menu
- $('.menuItem').click(function(e) { 
+ $('.menuItem').click(displayMenuContent.call(this));
+ 
+});
+
+function displayMenuContent(event){
+
    var clickedElem= $(this);
     console.log( "clickedElem: ",clickedElem.text());
    $( ".menuItem" ).each(function( index ) {
@@ -21,12 +24,13 @@ $(document).ready(function() {
      console.log("removing class active")
       currentElem.removeClass( "active" );
     }
-   });
- });
+  
+ }
  
-});
-
+}
  
- function test(){
- console.log("test");
+ function setDefaultLocation(){
+  if(window.location.hash.length <1){
+    window.location.hash= "home";
+  }
  }
