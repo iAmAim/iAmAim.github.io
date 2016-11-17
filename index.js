@@ -1,4 +1,11 @@
 $(document).ready(function() { 
+ 
+ //set default to home
+ if(window.location.hash.length <1){
+  window.location.hash= "home";
+ }
+ 
+ //add click event handler for the menu
  $('.menuItem').click(function(e) { 
    var clickedElem= $(this);
     console.log( "clickedElem: ",clickedElem.text());
@@ -14,5 +21,10 @@ $(document).ready(function() {
       currentElem.removeClass( "active" );
     }
    });
- }); 
+ });
+ 
+ 
+ function test(){
+ console.log("test");
+ }
 });
