@@ -24,7 +24,7 @@ function displayMenuContent(event){
      console.log("removing class active")
       currentElem.removeClass( "active" );
     }
-  
+   });
  }
  
 }
