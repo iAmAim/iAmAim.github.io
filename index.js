@@ -4,15 +4,14 @@ $(document).ready(function() {
  setDefaultLocation();
  
  //add click event handler for the menu
- $('.menuItem').click(displayMenuContent.bind(this,$(this)));
+ $('.menuItem').click(displayMenuContent.bind(this));
  
 });
 
-function displayMenuContent(menuItem, realItem){
+function displayMenuContent(){
 
-   var clickedElem= menuItem;
+   var clickedElem=  $( this );
     console.log( "clickedElem: ",clickedElem.text());
- console.log("realItem:",realItem.text());
    $( ".menuItem" ).each(function( index ) {
    var currentElem = $( this ); 
    console.log( "currentElem:", currentElem.text() );
