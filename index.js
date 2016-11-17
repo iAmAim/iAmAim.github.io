@@ -3,7 +3,6 @@ $(document).ready(function() {
  //set default to home
  setDefaultLocation();
  
- 
  //add click event handler for the menu
  $('.menuItem').click(displayMenuContent.call(this));
  
@@ -26,8 +25,7 @@ function displayMenuContent(event){
     }
    });
  }
- 
-}
+
  
  function setDefaultLocation(){
   if(window.location.hash.length <1){
