@@ -8,10 +8,11 @@ $(document).ready(function() {
  
 });
 
-function displayMenuContent(menuItem){
+function displayMenuContent(menuItem, realItem){
 
    var clickedElem= menuItem;
     console.log( "clickedElem: ",clickedElem.text());
+ console.log("realItem:",realItem.text());
    $( ".menuItem" ).each(function( index ) {
    var currentElem = $( this ); 
    console.log( "currentElem:", currentElem.text() );
