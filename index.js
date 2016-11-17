@@ -2,6 +2,7 @@ $(document).ready(function() {
  
  //set default to home
  if(window.location.hash.length <1){
+  test();
   window.location.hash= "home";
  }
  
@@ -23,8 +24,9 @@ $(document).ready(function() {
    });
  });
  
+});
+
  
  function test(){
  console.log("test");
  }
-});
